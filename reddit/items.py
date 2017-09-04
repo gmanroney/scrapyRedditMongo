@@ -12,6 +12,7 @@ class RedditItem(Item):
     # define the fields for your item here like:
     docTitle = Field()
     docUrl = Field()
-    docAuthor = Field()
+    docUrlHash = Field()
     docAuthorUrl = Field()
+    docAuthorUrlHash = Field()
     docTimestamp = Field()
