@@ -6,9 +6,12 @@
 # http://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy.item import Item, Field
 
-
-class RedditItem(scrapy.Item):
+class RedditItem(Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    docTitle = Field()
+    docUrl = Field()
+    docAuthor = Field()
+    docAuthorUrl = Field()
+    docTimestamp = Field()
